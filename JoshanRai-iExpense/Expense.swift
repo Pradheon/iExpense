@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 struct ExpenseItem: Identifiable, Codable {
@@ -33,5 +34,35 @@ class Expenses: ObservableObject {
         }
         
         items = []
+    }
+}
+
+var currencyFormat: FloatingPointFormatStyle<Double>.Currency {
+    let currencyCode = Locale.current.currencyCode ?? "USD"
+    return FloatingPointFormatStyle<Double>.Currency(code: currencyCode)
+}
+
+
+struct ExpenseForegroundColor: ViewModifier {
+    let expenseItem: ExpenseItem
+    
+    func body(content: Content) -> some View {
+        switch expenseItem.amount {
+        case 0..<10:
+            content
+                .foregroundColor(Color.green)
+        case 10..<100:
+            content
+                .foregroundColor(Color.yellow)
+        default:
+            content
+                .foregroundColor(Color.red)
+        }
+    }
+}
+
+extension View {
+    func expenseForegroundColor(for expenseItem: ExpenseItem) -> some View {
+        modifier(ExpenseForegroundColor(expenseItem: expenseItem))
     }
 }
