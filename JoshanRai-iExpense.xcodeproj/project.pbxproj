@@ -12,6 +12,7 @@
 		3FF3B2AE27D6C19D009D8CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3B2AD27D6C19D009D8CF8 /* Assets.xcassets */; };
 		3FF3B2B127D6C19D009D8CF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3B2B027D6C19D009D8CF8 /* Preview Assets.xcassets */; };
 		3FF3B2C427D96F68009D8CF8 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3B2C327D96F68009D8CF8 /* Expense.swift */; };
+		3FF3B2C627D9B703009D8CF8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3B2C527D9B703009D8CF8 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3FF3B2AD27D6C19D009D8CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF3B2B027D6C19D009D8CF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FF3B2C327D96F68009D8CF8 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		3FF3B2C527D9B703009D8CF8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				3FF3B2A927D6C19C009D8CF8 /* JoshanRai_iExpenseApp.swift */,
 				3FF3B2AB27D6C19C009D8CF8 /* ContentView.swift */,
+				3FF3B2C527D9B703009D8CF8 /* AddView.swift */,
 				3FF3B2C327D96F68009D8CF8 /* Expense.swift */,
 				3FF3B2AD27D6C19D009D8CF8 /* Assets.xcassets */,
 				3FF3B2AF27D6C19D009D8CF8 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF3B2C627D9B703009D8CF8 /* AddView.swift in Sources */,
 				3FF3B2AC27D6C19C009D8CF8 /* ContentView.swift in Sources */,
 				3FF3B2C427D96F68009D8CF8 /* Expense.swift in Sources */,
 				3FF3B2AA27D6C19C009D8CF8 /* JoshanRai_iExpenseApp.swift in Sources */,
@@ -285,7 +289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-iExpense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -314,7 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-iExpense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
